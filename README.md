@@ -263,6 +263,9 @@ Checkout my Deployment [HERE](https://thirdweb.com/0xEb5589B6536c8985fE7Bf7B0837
  
 ### :trinidad_tobago: Thirdweb Installation
 
+<div align="center">
+<a href="#instagram"><img src="https://markcubancompanies.com/wp-content/uploads/2022/08/Thirdweb-Logo-Transparent-Black.png" alt="Instagram" width="" height="30" /></a>
+</div>
 
 To install Thirdweb, run
 
