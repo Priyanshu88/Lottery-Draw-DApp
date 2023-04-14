@@ -42,6 +42,8 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 - [Getting Started](#toolbox-getting-started)
   - [Prerequisites](#bangbang-prerequisites)
   - [Installation](#gear-installation)
+  - [Smart Contract and Thirdweb Deployment](#radioactive-smart-contract-and-thirdweb-deployment)
+  - [Thirdweb Installation](#trinidad_tobago-Thirdweb Installation)
   - [Run Locally](#running-run-locally)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [Contact](#handshake-contact)
@@ -82,9 +84,10 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>Server and Smart Contract</summary>
   <ul>
-    <li><a href="https://firebase.google.com">Firebase</a></li>
+    <li><a href="https://thirdweb.com/">Thirdweb</a></li>
+    <li><a href="https://soliditylang.org/">Solidity</a></li>
   </ul>
 </details>
 <br />
@@ -104,13 +107,19 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/177784603-d69e9d02-721a-4bce-b9b3-949165d2edeb.png" alt="" width="30" height="30" /></a>
+<a href="#"><img src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png" alt="" width="30" height="30" /></a>
         </td>
                                             <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/204170976-0e5c6e2a-2b41-483d-adbd-d5d1e40b8d15.png" alt="" width="30" height="30" /></a>
+<a href="#"><img src="https://thirdweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-logo.a8cda9b2.png&w=1080&q=75" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#"><img src="https://raw.githubusercontent.com/atulmy/oauth/master/web/public/images/social/instagram.svg" alt="" width="30" height="30" /></a>
+<a href="#"><img src="https://download.logo.wine/logo/Solidity/Solidity-Logo.wine.png" alt="" width="30" height="30" /></a>
+        </td>
+                         <td>
+<a href="#"><img src="https://th.bing.com/th/id/OIP.AwL3MYHY-fdslcoeKo4H0gHaHa?pid=ImgDet&rs=1" alt="" width="30" height="30" /></a>
+        </td>
+          <td>
+<a href="#"><img src="https://th.bing.com/th/id/OIP.1YnLfl80MR6gLqr6dzAmZgHaHa?pid=ImgDet&rs=1" alt="" width="30" height="30" /></a>
         </td>
     </tr>
 </table>
@@ -119,22 +128,18 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 
 ### :bangbang: Prerequisites
 
-- Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
+- Create MetaMask account <a href="https://metamask.io/">HERE</a>
+- Sign up for a Thirdweb account <a href='https://thirdweb.com/'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 
 <!-- Env Variables -->
 
 ### :key: Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variable to your .env file
 
-`NEXTAUTH_URL`
+`NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS`
 
-`GOOGLE_CLIENT_ID`
-
-`GOOGLE_CLIENT_SECRET`
-
-`NEXTAUTH_SECRET`
 
 ### :gear: Installation
 
@@ -144,11 +149,11 @@ To run this project, you will need to add the following environment variables to
 Install my-project with npm
 
 ```
-npx create-next-app instagram_clone
+npx create-next-app Lottery-Draw-DApp
 ```
 
 ```
-cd instagram_clone
+cd Lottery-Draw-DApp
 ```
 
 Install dependencies
@@ -197,9 +202,72 @@ Add the `@tailwind` directives for each of Tailwind’s layers to your `./styles
 @tailwind utilities;
 ```
 
+OR
+
+```
+npx create-next-app -e with-tailwindcss Lottery-Draw-DApp
+```
+
 Install dependencies
 
 <a href="https://github.com/Priyanshu88/Lottery-Draw-DApp/blob/master/package.json" target="_blank">🔶 Other Dependency Info</a>
+
+
+<!-- Smart Contract -->
+
+### :radioactive: Smart Contract and Thirdweb Deployment
+
+
+![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
+
+
+Checkout the Solidity code for Smart Contract [HERE](https://github.com/Priyanshu88/Lottery-Smart-Contract)
+
+Clone the repository 
+
+```
+git clone https://github.com/Priyanshu88/Lottery-Smart-Contract.git
+```
+
+and run
+
+```
+npm i
+```
+
+```
+npx thirdweb@latest release
+```
+
+then login thirdweb with MetaMask account and create release and deploy on Polygon MATIC Testnet.
+
+Collect MATIC from [HERE](https://faucet.polygon.technology/).
+
+Checkout my Deployment [HERE](https://thirdweb.com/0xEb5589B6536c8985fE7Bf7B08372c8721343Cf74/Lottery)
+ 
+ 
+### :trinidad_tobago: Thirdweb Installation
+
+
+To install Thirdweb, run
+
+```
+npm install @thirdweb-dev/react @thirdweb-dev/sdk ethers
+```
+
+Add the Thirdweb Provider to wrap the entire `_app.tsx`
+
+```
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <ThirdwebProvider >
+      <Component {...pageProps} />
+    </ThirdwebProvider>
+  );
+}
+```
 
 <!-- Run Locally -->
 
@@ -210,14 +278,14 @@ Install dependencies
 Clone the project
 
 ```bash
-  git clone https://github.com/Priyanshu88/Lottery-Draw-DApp.git
+git clone https://github.com/Priyanshu88/Lottery-Draw-DApp.git
 ```
 
 Install dependencies
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ```bash
-  npm install
+npm install
 ```
 
 ## Getting Started
@@ -226,7 +294,7 @@ Start the server
 First, run the development server:
 
 ```bash
-  npm run dev
+npm run dev
 ```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -241,12 +309,13 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ### Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, Thirdweb and Solidity take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Thirdweb Documentaion](https://portal.thirdweb.com/) - explore more about Thirdweb.
+- [Learn Solidity](https://docs.soliditylang.org/en/latest/) - learn about Solidity.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 <!-- Deployment -->
 
