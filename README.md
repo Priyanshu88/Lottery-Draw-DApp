@@ -1,11 +1,11 @@
 <div align="center">
 
-  <img src="" alt="logo" width="205" height="auto" rounded-full/>
+  <img src="https://th.bing.com/th/id/R.76f0694bcd1b4a14a42b81c422222dba?rik=fxR2Yw8i2rR0Tg&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fcjdowner%2fcryptocurrency%2f512%2fQiwi-icon.png&ehk=V0fZDF5gmBHZQDOSL66pdBauimIQvpxnyKYRwDw%2fncA%3d&risl=&pid=ImgRaw&r=0" alt="logo" width="205" height="auto" rounded-full/>
   
   <h1>Lottery Draw DApp with NEXT.JS</h1>
   
   <p>
-Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CSS, Solidity, TypeScript, Thirdweb, Heroicons.)
+The Lottery Draw App comes with the features of login, logout using MetaMask. It has the admin control assigned and the admin can draw the winner, withdraw commission, restart the draw and can refund the bought lottery ticket charges to all. The Solidity smart contract has been deployed using thirdweb on Polygon Blockchain with MATIC Network. TypeScript has been used for error free robust code. The website is fully responsive and has TailwindCSS.
   </p>
   
   
@@ -37,13 +37,14 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 
 - [About the Project](#star2-about-the-project)
   - [Screenshots](#camera-screenshots)
+  - [Video](#video_camera-demo)
   - [Tech Stack](#space_invader-tech-stack)
   - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   - [Prerequisites](#bangbang-prerequisites)
   - [Installation](#gear-installation)
   - [Smart Contract and Thirdweb Deployment](#radioactive-smart-contract-and-thirdweb-deployment)
-  - [Thirdweb Installation](#trinidad_tobago-Thirdweb Installation)
+  - [Thirdweb Installation](#trinidad_tobago-thirdweb-installation)
   - [Run Locally](#running-run-locally)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [Contact](#handshake-contact)
@@ -56,13 +57,27 @@ Crypto Lottery Draw DApp with NEXT.JS! (React.js, Next.js, MetaMask, Tailwind CS
 
 ### :camera: Screenshots
 
-<!-- <div align="center"> -->
-<!-- <a href="hhttps://instagram-build-gamma.vercel.app/" target="_blank"><img  src='' alt='image'/></a> -->
-<!--   https://user-images.githubusercontent.com/86107841/227702718-6b2f26d4-aa3d-4ae6-9f56-ec09b77191bd.mp4 -->
 
-<!-- </div> -->
+- User View
 
 
+<div align="center"> 
+ <a href="https://lottery-draw-dapp.vercel.app/" target="_blank"><img  src='https://user-images.githubusercontent.com/86107841/232054792-bfb09532-d95b-4f21-8b0b-374fcb13b8ea.png' alt='image'/></a>
+ </div>
+
+
+
+- Admin View 
+
+
+
+<div align="center"> 
+ <a href="https://lottery-draw-dapp.vercel.app/" target="_blank"><img  src='https://user-images.githubusercontent.com/86107841/232055187-dd783d2b-3d07-4c97-ad1f-dae668de1b1e.png' alt='image'/></a>
+ </div>
+ 
+ 
+ 
+### :video_camera: Demo
 
 
 ## <a href="https://lottery-draw-dapp.vercel.app/" target="_blank">LIVE DEMO 💥</a>
@@ -316,6 +331,10 @@ To learn more about Next.js, Thirdweb and Solidity take a look at the following 
 - [Thirdweb Documentaion](https://portal.thirdweb.com/) - explore more about Thirdweb.
 - [Learn Solidity](https://docs.soliditylang.org/en/latest/) - learn about Solidity.
 
+### Checkout
+
+Libraries used [React Countdown](https://www.npmjs.com/package/react-countdown), [React Fast Marquee](https://www.npmjs.com/package/react-fast-marquee), [React Hot Toast](https://react-hot-toast.com/), and [React Spinners](https://www.npmjs.com/package/react-spinners).
+
 
 <!-- Deployment -->
 
@@ -342,7 +361,7 @@ Project Link: [https://github.com/Priyanshu88/Lottery-Draw-DApp.git](https://git
 <hr />
 
 <div align="center">
-<a href="https://lottery-draw-dapp.vercel.app/" target="_blank"><img  src='' alt='image'/></a>
+<a href="https://lottery-draw-dapp.vercel.app/" target="_blank"><img  src='https://user-images.githubusercontent.com/86107841/232055967-7f88dd95-a349-4bdd-95dd-78a1c9ecf13e.png' alt='image'/></a>
 </div>
 
 <br />
