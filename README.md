@@ -80,6 +80,14 @@ The Lottery Draw App comes with the features of login, logout using MetaMask. It
 ### :video_camera: Demo
 
 
+
+
+
+https://user-images.githubusercontent.com/86107841/232316289-e7d1eddd-85db-42ca-aef1-18f11ac3c4db.mp4
+
+
+
+
 ## <a href="https://lottery-draw-dapp.vercel.app/" target="_blank">LIVE DEMO 💥</a>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
